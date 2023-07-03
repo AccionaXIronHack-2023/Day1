@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditionals</title>
+</head>
+
+<body>
+
+    <script>
+
+        let age = prompt("How old are u ???")
+
+        if (age < 21) {
+            console.log("Sorry! You can't enter Kapi")
+        }
+        else if (age >= 21) {
+            console.log('You can go to Kapi!')
+        }
+
+        // Conditional expressions
+
+        // I -> Estudio de casos a través de condicional if/else
+        const fruit = prompt("Your favorite fruit:")
+
+        if (fruit === 'Manzana') {
+            console.log('LA CONDICION SE CUMPLE')
+        }
+        else if (fruit === 'Piñita') {
+            console.log('Tengo la piñita')
+        }
+        else if (fruit === 'Apple') {
+            console.log('TENGO LA MANZANA')
+        }
+        else {
+            console.log('NINGUNA DE LAS CONDICIONES SE CUMPLE')
+        }
+
+        // SWITCH
+
+        // Cuando lidiamos con un estudio de casos, es mejor servirnos de un SWITCH.
+        // Los switch statements poseen una sintaxis más concisa.
+        switch (fruit) {
+            case 'banana':
+                console.log('SALGO YO, TÍO')
+                break;
+            case 'pineapple':
+                console.log('Soy una piña')
+                break;
+            case 'banana':
+                console.log('Soy una mansana')
+                break;
+            case 'orange':
+                console.log('Soy de color')
+                break;
+            case 'tomato':
+                console.log('Soy rojito')
+                break;
+        }
+
+        // ROCK PAPER SCISSORS OPTIMAL SOLUTION
+        const rps = (p1, p2) => {
+            const rules = {
+                "rock": "scissors",
+                "paper": "rock",
+                "scissors": "paper",
+            }
+
+            if (p1 === p2) return "Draw!"
+            else if (p2 === rules[p1]) return "Player 1 won!"
+            else {
+                return "Player 2 won!"
+            }
+        }
+
+    </script>
+</body>
+
+</html>
